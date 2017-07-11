@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<plugin id="cordova-plugin-mosambeepos" version="1.2.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>mosambeepos</name>
+<js-module name="mosambeepos" src="www/mosambeepos.js">
+<clobbers target="cordova.plugins.mosambeepos" />
+</js-module>
+<platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="mosambeepos">
+<param name="android-package" value="cordova.plugin.mosambeepos.OpenNative" />
+</feature>
+</config-file>
+<config-file parent="/manifest/application" target="AndroidManifest.xml">
+<activity android:name="cordova.plugin.mosambeepos.Mosambee" android:label="@string/app_name" >
+<intent-filter>
+<action android:name="android.intent.action.MOSAMBEE" />
+<category android:name="android.intent.category.DEFAULT" />
+</intent-filter>
+</activity>
+</config-file>
+<config-file parent="/*" target="AndroidManifest.xml">
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+</config-file>
+<source-file src="src/android/Mosambee.java" target-dir="src/cordova/plugin/mosambeepos" />
+<source-file src="src/android/JARClass.java" target-dir="src/cordova/plugin/mosambeepos" />
+<source-file src="src/android/OpenNative.java" target-dir="src/cordova/plugin/mosambeepos" />
+<source-file src="src/android/libs/mosambeelib_v1.0.0.027.jar" target-dir="libs" />
+<resource-file src="src/android/layout/activity_main.xml" target="res/layout/activity_main.xml" />
+</platform>
+</plugin>

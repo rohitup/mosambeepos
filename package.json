@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-mosambeepos",
+  "version": "1.0.0",
+  "description": "A cordova plugin is used to connect Mosambee EDC with Android App.",
+  "cordova": {
+    "id": "cordova-plugin-mosambeepos",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitup/mosambee.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "rohitup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohitup/mosambee/issues"
+  },
+  "homepage": "https://github.com/rohitup/mosambee#readme"
+}
