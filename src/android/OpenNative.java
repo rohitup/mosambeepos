@@ -51,16 +51,6 @@ public class OpenNative extends CordovaPlugin {
             }
             private void openN(String phone,String propno,String propid,String totalamt,String payableamt ,String suserMobile) throws IOException {
 
-                Intent intent = new Intent(this.cordova.getActivity().getApplicationContext(), Mosambee.class);
-                intent.putExtra("phone", phone);
-                intent.putExtra("propno", propno);
-                intent.putExtra("propid", propid);
-                intent.putExtra("totalamt", totalamt);
-                intent.putExtra("payableamt", payableamt);
-                intent.putExtra("suserMobile", suserMobile);
-                this.cordova.getActivity().startActivityForResult(intent,0);
-                //this.cordova.getActivity().startActivity(intent);
-                this.cordova.getActivity().overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
             /*private void echo(String message, CallbackContext callbackContext) {
                 if (message != null && message.length() > 0) {
