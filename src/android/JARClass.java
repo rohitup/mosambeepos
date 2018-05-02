@@ -59,9 +59,7 @@ public class JARClass implements TransactionResult {
 			  /* moscCallback.initialiseFields("sale", "9689799845",
 					"cGjhE$@fdhj4675riesae", false, "faiz.saifi@mosambee.in",
 					"merchantRef1", "", "09082013101105", "120");*/
-			   moscCallback.initialiseFields("sale", phone,
-						"cGjhE$@fdhj4675riesae", false, "",
-						propno, "", getDate, "");
+			  
 			   moscCallback.setSleepTime(0);
 			  // moscCallback.doChequeCash(PostType.CASH,  Double.parseDouble("1.00"), "Myname", "4554545454545",orderId) ;
 			   //tc.processTransaction(orderId, Double.parseDouble("1.00"),Double.parseDouble("675466"), "879209");
